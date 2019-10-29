@@ -37,5 +37,13 @@ describe('MinHooks', function () {
                 .click()
             cy.contains('XXX').should('not.exist')
         })
+        it('should enable user to set the display message', () => {
+            cy.visit('https://min-hooks-goatstone.appspot.com/')
+            cy.get('article.message-control input')
+                .type('XXX')
+            cy.get('article.message-control button.set-message')
+                .click()
+            cy.get('article.message-display').contains('XXX')
+        })
     })
 })
