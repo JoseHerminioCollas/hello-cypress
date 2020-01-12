@@ -14,3 +14,6 @@ Run Cypress with Docker according to this blog, [Run Cypress with a single Docke
 ```
 docker run -it -v $PWD:/e2e -w /e2e cypress/included:3.2.0
 ```
+```
+docker run -it -v $PWD:/e2e -v /home/goat/projects/map-lab:/map-lab -w /e2e --entrypoint='cypress' cypress/included:3.2.0 run
+```

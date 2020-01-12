@@ -31,7 +31,8 @@ describe('HelloX component', () => {
   it('works', () => {
     // cy.mount(<HelloX name='SuperMan' />)
     // cy.contains('Hello SuperMan!')
-    cy.mount(<GoToPlace {...props} />)
+    // cy.mount(<Map {...props} />)
+    cy.mount(<GoToPlace setMoveCenterBy={() => 1} />)
   })
 })
 //   it('renders Unicode', () => {
