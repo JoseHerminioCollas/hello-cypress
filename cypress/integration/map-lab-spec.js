@@ -1,5 +1,9 @@
-import { HelloX, HelloState } from '../src/hello-x.jsx'
+// import { HelloX, HelloState } from '../../src/hello-x.jsx'
 import React from 'react'
+import Map from '/map-lab/src/components/Map'
+import GoToPlace from '/map-lab/src/components/GoToPlace'
+import * as ReactDOM from 'react-dom';
+window.ReactDOM = ReactDOM;
 
 const initLatLng = [47.6, -122.3]
 const mapStatus = {
@@ -22,7 +26,21 @@ const props = {
   mapControl,
   mapStatusActions,
 }
-// import Map from '../map-lab/src/components/Map'
+// map src folder in docker /src
+describe('HelloX component', () => {
+  it('works', () => {
+    // cy.mount(<HelloX name='SuperMan' />)
+    // cy.contains('Hello SuperMan!')
+    cy.mount(<GoToPlace {...props} />)
+  })
+})
+//   it('renders Unicode', () => {
+//     cy.mount(<HelloX name='🌎' />)
+//     cy.contains('Hello 🌎!')
+//     cy.percySnapshot('Hello globe')
+//     cy.wait(1000)
+//   })
+// })
 // describe('MinHooks', function () {
 //     describe('AAA', () => {
 //         it('XXX', function () {
@@ -32,22 +50,6 @@ const props = {
 //             // expect(true).to.be.true
 //         })
 //     })
-// })
-
-/* eslint-env mocha */
-describe('HelloX component', () => {
-  it('works', () => {
-    cy.mount(<HelloX name='SuperMan' />)
-    cy.contains('Hello SuperMan!')
-    // cy.mount(<Map {...props} />)
-  })
-})
-//   it('renders Unicode', () => {
-//     cy.mount(<HelloX name='🌎' />)
-//     cy.contains('Hello 🌎!')
-//     cy.percySnapshot('Hello globe')
-//     cy.wait(1000)
-//   })
 // })
 
 // describe('HelloState component', () => {
