@@ -1,5 +1,5 @@
 
-describe('MinHooks', function () {
+describe.skip('MinHooks', function () {
     describe('Content and Form', () => {
         it('should have certain content', function () {
             cy.visit('https://min-hooks-goatstone.appspot.com/')

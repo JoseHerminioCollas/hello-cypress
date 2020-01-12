@@ -1,0 +1,26 @@
+{
+  "name": "hello-cypress",
+  "version": "1.0.0",
+  "description": "A place to write scripts for Cypress.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoseHerminioCollas/hello-cypress.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoseHerminioCollas/hello-cypress/issues"
+  },
+  "homepage": "https://github.com/JoseHerminioCollas/hello-cypress#readme",
+  "dependencies": {
+    "react": "16.12.0",
+    "react-dom": "16.12.0"
+  },
+  "devDependencies": {
+    "cypress-react-unit-test": "^2.4.3"
+  }
+}
